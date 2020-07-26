@@ -1,0 +1,31 @@
+{
+  "name": "qa-testing",
+  "version": "1.0.0",
+  "description": "A practice area for learning general testing practices",
+  "main": "index.js",
+  "scripts": {
+    "build": "concurrently --names \"server,client\" --prefix \"[{name}]\" \"npm run build:server --silent\" \"npm run build:client --silent\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timegated/qa-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timegated/qa-testing/issues"
+  },
+  "homepage": "https://github.com/timegated/qa-testing#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cypress": "^4.11.0",
+    "eslint": "^7.5.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "replace-in-file": "^6.1.0"
+  }
+}
